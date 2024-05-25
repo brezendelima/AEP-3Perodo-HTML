@@ -132,47 +132,40 @@
         <div class="cadastrar-usuario-form">
           <div class="cadastrar-usuario-input"><span class="cadastrar-usuario-text Smalltext"><span
                 class="cadastrar-usuario-text01">Nome*</span></span>
-            <div class="cadastrar-usuario-field input"><span class="cadastrar-usuario-text02 Smalltext"><span>Ex:
-                  João</span></span></div>
+            <input type="text" id="inputNome" class="cadastrar-usuario-field input" placeholder="Ex: João">
           </div>
           <div class="cadastrar-usuario-input1"><span class="cadastrar-usuario-text04 Smalltext"><span
                 class="cadastrar-usuario-text05">Sobrenome*</span></span>
-            <div class="cadastrar-usuario-field1 input"><span class="cadastrar-usuario-text06 Smalltext"><span>Ex: Da
-                  Silva</span></span></div>
+            <input type="text" id="inputSobrenome" class="cadastrar-usuario-field1 input" placeholder="Ex: Da Silva">
           </div>
           <div class="cadastrar-usuario-input2"><span class="cadastrar-usuario-text08 Smalltext"><span
                 class="cadastrar-usuario-text09">CPF*</span></span>
-            <div class="cadastrar-usuario-field2 input"><span
-                class="cadastrar-usuario-text10 Smalltext"><span>000.000.000-00</span></span></div>
+            <input type="text" id="inputCPF" class="cadastrar-usuario-field2 input" placeholder="000.000.000-00">
           </div>
           <div class="cadastrar-usuario-input3"><span
               class="cadastrar-usuario-text12 Smalltext"><span>CNPJ</span></span>
-            <div class="cadastrar-usuario-field3 input"><span
-                class="cadastrar-usuario-text14 Smalltext"><span>00.000.000/0000-00</span></span></div>
+            <input type="text" id="inputCNPJ" class="cadastrar-usuario-field3 input" placeholder="00.000.000/0000-00">
           </div>
           <div class="cadastrar-usuario-input4"><span class="cadastrar-usuario-text16 Smalltext"><span
-                class="cadastrar-usuario-text17">Login*</span></span>
-            <div class="cadastrar-usuario-field4 input"><span
-                class="cadastrar-usuario-text18 Smalltext"><span>email@exemplo.com</span></span></div>
+                class="cadastrar-usuario-text17">E-Mail*</span></span>
+            <input type="email" id="inputEmailCadastro" class="cadastrar-usuario-field4 input" placeholder="email@exemplo.com">
           </div>
           <div class="cadastrar-usuario-input5"><span class="cadastrar-usuario-text20 Smalltext"><span
                 class="cadastrar-usuario-text21">Senha*</span></span>
-            <div class="cadastrar-usuario-field5 input"><span
-                class="cadastrar-usuario-text22 Smalltext"><span>Senh@123!</span></span></div>
-          </div><button class="cadastrar-usuario-button"><span
+            <input type="password" id="inputSenhaCadastro" class="cadastrar-usuario-field5 input" placeholder="Senh@123!">
+          </div><button class="cadastrar-usuario-button" onclick="cadastrarUsuario()"><span
               class="cadastrar-usuario-text24 Bodytext"><span>Enviar</span></span></button>
         </div>
         <div class="cadastrar-usuario-form1">
           <div class="cadastrar-usuario-input6"><span class="cadastrar-usuario-text26 Smalltext"><span
                 class="cadastrar-usuario-text27">Login*</span></span>
-            <div class="cadastrar-usuario-field6 input"><span
-                class="cadastrar-usuario-text28 Smalltext"><span>email@exemplo.com</span></span></div>
+              <input type="email" id="inputEmailLogin" class="cadastrar-usuario-field4 input" placeholder="email@exemplo.com">
           </div>
           <div class="cadastrar-usuario-input7"><span class="cadastrar-usuario-text30 Smalltext"><span
                 class="cadastrar-usuario-text31">Senha*</span></span>
-            <div class="cadastrar-usuario-field7 input"><span
-                class="cadastrar-usuario-text32 Smalltext"><span>Senh@123!</span></span></div>
-          </div><button class="cadastrar-usuario-button1"><span
+              <input type="password" id="inputSenhaLogin" class="cadastrar-usuario-field5 input" placeholder="Senh@123!">
+          </div>
+          <button class="cadastrar-usuario-button1" onclick="logarUsuario()"><span
               class="cadastrar-usuario-text34 Bodytext"><span>Enviar</span></span></button>
         </div>
         <div class="cadastrar-usuario-headline"><span class="cadastrar-usuario-text36 Title"><span>Crie seu
