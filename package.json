@@ -1,10 +1,5 @@
 {
-  "name": "aep-3perodo",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "parcel-bundler": "^1.6.1"
-  },
-  "scripts": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
 }

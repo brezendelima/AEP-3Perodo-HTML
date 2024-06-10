@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="font-inter">
+  <header class="bg-gradient-to-r from-customBlue via-customPink to-customGray">
+    <nav class="flex items-center justify-between">
+      <a href="index.html"><img src="public/rrl-logo.png" alt="rrl-logo"></a>
+      <ul class="flex items-center font-medium text-xl gap-12">
+        <li class="transition-header"><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li class="transition-header"><a href="como-ajudar.html">Como Ajudar</a></li>
+        <li class="transition-header"><a href="contato.html">Contato</a></li>
+        <li class="transition-header"><a href="faq.html">FAQ</a></li>
+        <li><button class="bg-customButton border border-black hover:text-customButton hover:bg-black hover:border-customButton transition-colors duration-300 ease-in-out rounded-xl py-1.5 px-8 mr-20"><a href="login.html">Login</a></button></li>
+      </ul>
+    </nav>
+  </header> 
+  <main class="m-20 flex justify-center gap-36 items-center">
+    <div>
+        <div class="space-y-6">
+            <h2 class="font-bold text-6xl">Crie seu usuário</h2>
+            <p class="text-2xl text-customButton">Crie sua conta e publique suas campanhas</p>
+        </div>
+        <form class="flex flex-col gap-6 mt-8">
+            <div class="flex gap-8">
+                <p class="flex flex-col gap-2">
+                    <label class="font-medium" for="nome">Nome</label>
+                    <input class="py-2.5 px-4 border-2 rounded-lg" type="text" id="nome" placeholder="Ex: João">
+                </p>
+                <p class="flex flex-col gap-2">
+                    <label class="font-medium" for="sobrenome">Sobrenome</label>
+                    <input class="py-2.5 px-4 border-2 rounded-lg" type="text" id="sobrenome" placeholder="Ex: da Silva">
+                </p>
+            </div> 
+            <div class="flex gap-8">
+                <p class="flex flex-col gap-2">
+                    <label class="font-medium" for="cpf">CPF</label>
+                    <input class="py-2.5 px-4 border-2 rounded-lg" type="number" id="cpf" placeholder="000.000.000-00">
+                </p>
+                <p class="flex flex-col gap-2">
+                    <label class="font-medium" for="cnpj">CNPJ</label>
+                    <input class="py-2.5 px-4 border-2 rounded-lg" type="number" id="cnpj" placeholder="00.000.000/0000-00">
+                </p>
+            </div> 
+            <p class="flex flex-col gap-2">
+                <label class="font-medium" for="email">Endereço de e-mail</label>
+                <input class="py-2.5 px-4 border-2 rounded-lg" type="email" id="email" placeholder="email@exemplo.com">
+            </p>   
+            <p class="flex flex-col gap-2">
+                <label class="font-medium" for="senha">Senha</label>
+                <input class="py-2.5 px-4 border-2 rounded-lg" type="password" id="senha" placeholder="Senh@123!">
+            </p>   
+            <button type="submit" class="py-4 px-4 bg-black text-white text-xl font-medium rounded-lg hover:text-black hover:bg-slate-200 transition-colors duration-150 ease-in-out">Enviar</button>
+        </form>
+    </div>
+    <div>
+        <div class="space-y-6">
+            <h2 class="font-bold text-6xl">Já tem conta?</h2>
+            <p class="text-2xl text-customButton">Faça seu login aqui:</p>
+        </div>
+        <form class="flex flex-col gap-6 mt-8">
+            <p class="flex flex-col gap-2">
+                <label class="font-medium" for="email">Endereço de e-mail</label>
+                <input class="py-2.5 px-4 border-2 rounded-lg" type="email" id="email" placeholder="email@exemplo.com">
+            </p>   
+            <p class="flex flex-col gap-2">
+                <label class="font-medium" for="senha">Senha</label>
+                <input class="py-2.5 px-4 border-2 rounded-lg" type="password" id="senha" placeholder="Senh@123!">
+            </p>   
+            <button type="submit" class="py-4 px-4 bg-black text-white text-xl font-medium rounded-lg hover:text-black hover:bg-slate-200 transition-colors duration-150 ease-in-out">Enviar</button>
+        </form>
+    </div>
+  </main>
+  <footer class="bg-gradient-to-r from-customBlue via-customPink to-customGray pb-14 flex justify-between">
+    <div>
+      <a href="index.html"><img src="public/rrl-logo.png" alt="rrl-logo"></a>
+      <div class="flex gap-8 ml-20 items-center">
+        <a href=""><img class="transition-footer-2" src="public/icon-face.png" alt="icon-face"></a>
+        <a href=""><img class="transition-footer-2" src="public/icon-linkedin.png" alt="icon-linkedin"></a>
+        <a href=""><img class="transition-footer-2" src="public/icon-youtube.png" alt="icon-youtube"></a>
+        <a href=""><img class="transition-footer-2" src="public/icon-insta.png" alt="icon-insta"></a>
+      </div>
+    </div>  
+    <div class="flex gap-24 justify-center mt-8 mr-20">
+      <ul class="flex flex-col justify-center gap-6 font-medium">
+        <li class="text-black transition-footer"><a href="#">Como Ajudar</a></li>
+        <li class="text-[#454545] transition-footer"><a href="#">Doações</a></li>
+        <li class="text-[#454545] transition-footer"><a href="#">Voluntariados</a></li>
+        <li class="text-[#454545] transition-footer"><a href="#">Instruções</a></li>
+      </ul>
+      <ul class="flex flex-col justify-center gap-6 font-medium">
+        <li class="text-black transition-footer"><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li class="text-[#454545] transition-footer"><a href="como-ajudar.html">Como Ajudar</a></li>
+        <li class="text-[#454545] transition-footer"><a href="contato.html">Contato</a></li>
+        <li class="text-[#454545] transition-footer"><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

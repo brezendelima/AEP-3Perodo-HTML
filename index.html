@@ -1,125 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <title>Home Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="assets/css/index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-
-<header>
-  <div class="cabecalhoGradiente">
-    <span>
-      <img alt="LogoRRL" src="public/external/logoRRL.png" />
-      <h1>RRL</h1>
-      <h2>Sua página de divulgação de campanhas sociais</h2>
-    </span>
-    <span class="redirecionamentos">
-      <a href="sobre-nos.html" target="_blank">Sobre Nós</a>
-    </span>
-    <span class="redirecionamentos">
-      <a href="como-ajudar.html" target="_blank">Como Ajudar</a>
-    </span>
-    <span class="redirecionamentos">
-      <a href="contato.html" target="_blank">Contato</a>
-    </span>
-    <span class="redirecionamentos">
-      <a href="faq.html" target="_blank">FAQ</a>
-    </span>
-    <span class="redirecionamentos">
-      <a href="area-logada.html" target="_blank">Login</a>
-    </span>
-  </div>
-</header>
-
-<body>
-  <div class="home-page-container">
-    <div class="home-page">
-
-      <img alt="doacaoSangue" src="public/external/doacaoSangue.png" />
-      <div class="home-page-heading">
-        <span>Nossa principal campanha:</span>
-        <span>Junho Vermelho - Prefeitura de Curitiba</span>
+<body class="font-inter">
+  <header class="bg-gradient-to-r from-customBlue via-customPink to-customGray">
+    <nav class="flex items-center justify-between">
+      <a href="index.html"><img src="public/rrl-logo.png" alt="rrl-logo"></a>
+      <ul class="flex items-center font-medium text-xl gap-12">
+        <li class="transition-header"><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li class="transition-header"><a href="como-ajudar.html">Como Ajudar</a></li>
+        <li class="transition-header"><a href="contato.html">Contato</a></li>
+        <li class="transition-header"><a href="faq.html">FAQ</a></li>
+        <li><button class="bg-customButton border border-black hover:text-customButton hover:bg-black hover:border-customButton transition-colors duration-300 ease-in-out rounded-xl py-1.5 px-8 mr-20"><a href="login.html">Login</a></button></li>
+      </ul>
+    </nav>
+  </header> 
+  <main class="m-20">
+    <div class="flex justify-center">
+      <div class="bg-gradient-to-r from-customBlue via-customPink to-customGray flex flex-col items-center w-8/12 rounded-xl shadow-xl gap-8">
+        <h1 class="font-bold text-6xl mt-4">RRL</h1>
+        <h2 class="text-customButton text-2xl mb-4">Sua página de divulgação de campanhas sociais</h2>
       </div>
-      <div>
-        <span>Demais campanhas:</span>
-        <span>Disponíveis na sua região e no Brasil</span>
-      </div>
-      <div class="home-page-cards">
-        <div class="home-page-customer-quote">
-          <img alt="Avatar4189" src="public/external/unicesumarLogo.png" />
-          <div>
-            <span>Campanha do Agasalho</span>
-            <span">Unicesumar</span>
-              <span>Instituição de Ensino Privada</span>
-          </div>
-        </div>
-        <div class="home-page-customer-quote">
-          <img alt="prefeituraLogo" src="public/external/prefeituraLogo.png" />
-          <div>
-            <span>Doe Amor, Doe Ração</span>
-            <span>Prefeitura de Curitiba</span>
-            <span>Rede de Proteção Animal</span>
-          </div>
-        </div>
-        <div class="home-page-customer-quote">
-          <img alt="cotolengoLogo" src="public/external/cotolengoLogo.png" class="home-page-avatar5" />
-          <div class="home-page-frame26103012">
-            <span>Ação beneficiária Cotolengo</span>
-            <span>Cotolengo</span>
-            <span>Hospital Cotolengo</span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <span><a href="sobre-nos.html">Sobre Nós</a></span>
-          <span><a href="como-ajudar.html">Como Ajudar</a></span>
-          <span><a href="contato.html">Contato</a></span>
-          <span><a href="faq.html">FAQ</a></span>
-          <div>
-            <span><a href="cadastrar-usuario.html">Login</a></span>
-          </div>
-        </div>
-      </div>
-      <!-- Footer -->
-      <div>
-        <div>
-          <span>Como Ajudar</span>
-          <span>Doações</span>
-          <span>Voluntariados</span>
-          <span>Instruções</span>
-        </div>
-        <div>
-          <span>Sobre Nós</span>
-          <span>Missão e Valores</span>
-          <span>Contato</span>
-          <span>FAQ</span>
-        </div>
-        <div>
-          <button>
-            <div><img alt="iconFacebook" src="public/external/iconFacebook.svg" />
-            </div>
-          </button>
-          <button>
-            <div><img alt="iconLinkedIn" src="public/external/iconLinkedIn.svg" />
-            </div>
-          </button>
-          <button>
-            <div><img alt="iconYoutube" src="public/external/iconYoutube.svg" />
-            </div>
-          </button>
-          <button>
-            <div><img alt="iconInstagram" src="public/external/iconInstagram.svg" />
-            </div>
-          </button>
-        </div>
-        <img alt="dividerFooter" src="public/external/dividerFooter.svg" />
-      </div>
-      <img alt="LogoRRL" src="public/external/logoRRL.png" />
     </div>
-  </div>
+    <div class="space-y-2 mt-28 mb-11">
+      <h3 class="text-4xl font-semibold">Nossa principal campanha:</h3>
+      <p class="text-2xl text-customButton">Junho Vermelho - Prefeitura de Curitiba</p>
+    </div>
+    <div class="flex justify-center mb-20">
+      <img src="public/banner-junho-vermelho.png" alt="banner-junho-vermelho">
+    </div>  
+    <div class="space-y-2 mb-8">
+      <h3 class="text-4xl font-semibold">Demais campanhas:</h3>
+      <p class="text-2xl text-customButton">Disponíveis na sua região e no Brasil</p>
+    </div>
+    <div class="flex justify-center gap-8 mb-28">
+      <div class="bg-gradient-to-r from-customBlue to-slate-50 font-medium rounded-xl space-y-12 p-8 shadow-2xl w-1/3">
+        <h4 class="text-xl">Campanha do Agasalho</h4>
+        <div class="flex gap-3">
+          <img src="public/icon-unicesumar.png" alt="icon-unicesumar">
+          <div>
+            <p>Unicesumar</p>
+            <p class="text-customButton">Instituição de Ensino Privada</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-customPink to-slate-50 font-medium rounded-xl space-y-12 p-8 shadow-2xl w-1/3">
+        <h4 class="text-xl">Doe Amor, Doe Ração</h4>
+        <div class="flex gap-3">
+          <img src="public/icon-prefeitura.png" alt="icon-unicesumar">
+          <div>
+            <p>Prefeitura de Curitiba</p>
+            <p class="text-customButton">Rede de Proteção Animal</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-customGray to-slate-50 font-medium rounded-xl space-y-12 p-8 shadow-2xl w-1/3">
+        <h4 class="text-xl">Ação beneficiária Cotolengo</h4>
+        <div class="flex gap-3">
+          <img src="public/icon-cotolengo.png" alt="icon-unicesumar">
+          <div>
+            <p>Cotolengo</p>
+            <p class="text-customButton">Hospital Cotolengo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-gradient-to-r from-customBlue via-customPink to-customGray pb-14 flex justify-between">
+    <div>
+      <a href="index.html"><img src="public/rrl-logo.png" alt="rrl-logo"></a>
+      <div class="flex gap-8 ml-20 items-center">
+        <a href=""><img class="transition-footer-2" src="public/icon-face.png" alt="icon-face"></a>
+        <a href=""><img class="transition-footer-2" src="public/icon-linkedin.png" alt="icon-linkedin"></a>
+        <a href=""><img class="transition-footer-2" src="public/icon-youtube.png" alt="icon-youtube"></a>
+        <a href=""><img class="transition-footer-2" src="public/icon-insta.png" alt="icon-insta"></a>
+      </div>
+    </div>  
+    <div class="flex gap-24 justify-center mt-8 mr-20">
+      <ul class="flex flex-col justify-center gap-6 font-medium">
+        <li class="text-black transition-footer"><a href="#">Como Ajudar</a></li>
+        <li class="text-[#454545] transition-footer"><a href="#">Doações</a></li>
+        <li class="text-[#454545] transition-footer"><a href="#">Voluntariados</a></li>
+        <li class="text-[#454545] transition-footer"><a href="#">Instruções</a></li>
+      </ul>
+      <ul class="flex flex-col justify-center gap-6 font-medium">
+        <li class="text-black transition-footer"><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li class="text-[#454545] transition-footer"><a href="como-ajudar.html">Como Ajudar</a></li>
+        <li class="text-[#454545] transition-footer"><a href="contato.html">Contato</a></li>
+        <li class="text-[#454545] transition-footer"><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
-
 </html>
