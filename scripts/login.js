@@ -76,18 +76,16 @@ function logarUsuario() {
 
         if (usuario.email == email && usuario.senha == senha) {
             localStorage.setItem('login', JSON.stringify({logado: true, index: index}))
-            return window.location.href = 'area-logada.html'
+            login = JSON.parse(localStorage.getItem('login'))
+            return
         }
     })
 
+    if (login.logado) {
+        return window.location.href = 'area-logada.html'
+    }
+
     return alert('E-mail ou senha inválidas')
-}
-
-
-function deslogarUsuario() {
-
-    localStorage.setItem('login', JSON.stringify({logado: false}))
-    return window.location.href = 'index.html'
 }
 
 
@@ -107,20 +105,19 @@ function limparCampos() {
 function recarregarUsuarios() {
 
     const usuariosLocalStorage = localStorage.getItem('usuarios')
-    const logadoLocalStorafe = localStorage.getItem('login')
+    const logadoLocalStorage = localStorage.getItem('login')
 
     if (usuariosLocalStorage) {
         listaDeUsuarios = JSON.parse(usuariosLocalStorage)
     }
     
-    if (logadoLocalStorafe) {
-        login = JSON.parse(logadoLocalStorafe)
+    if (logadoLocalStorage) {
+        login = JSON.parse(logadoLocalStorage)
     }
 }
 
 recarregarUsuarios()
-console.log(login.logado)
-if (window.location.href.indexOf('cadastrar-usuario.html') !== -1) {
+if (window.location.href.indexOf('login.html') !== -1) {
     if (login.logado) {
         window.location.href = 'area-logada.html'
     }
