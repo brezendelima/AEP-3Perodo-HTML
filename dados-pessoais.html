@@ -54,14 +54,14 @@
         </div>
         <p class="flex flex-col gap-2">
           <label class="font-medium" for="email">Endereço de e-mail</label>
-          <input class="py-2.5 px-4 border-2 rounded-lg" type="email" id="email-cadastro">
+          <input class="py-2.5 px-4 border-2 rounded-lg" type="email" id="email">
         </p>
         <p class="flex flex-col gap-2">
           <label class="font-medium" for="senha">Senha</label>
-          <input class="py-2.5 px-4 border-2 rounded-lg" type="password" id="senha-cadastro">
+          <input class="py-2.5 px-4 border-2 rounded-lg" type="password" id="senha">
         </p>
-        <button type="submit"
-          class="py-4 px-4 bg-black text-white text-xl font-medium rounded-lg hover:text-black hover:bg-slate-200 transition-colors duration-150 ease-in-out">Salvar</button>
+        <button type="submit" onclick="alterarUsuario()"
+          class="py-4 px-4 bg-black text-white text-xl font-medium rounded-lg hover:text-black hover:bg-slate-200 transition-colors duration-150 ease-in-out">Alterar</button>
       </form>
     </div>
   </main>
@@ -91,7 +91,7 @@
     </div>
   </footer>
 
-  <script src="scripts/login.js"></script>
+  <script src="scripts/alterar-dados.js"></script>
 </body>
 
 </html>
