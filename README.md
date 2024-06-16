@@ -1,10 +1,10 @@
 # AEP - Engenharia de Software 3º Período
 
-# Integrantes:
-# Bruno Rezende de Lima RA: 24081546-2
-# Eduardo Henrique Ranucci Moreira RA: 23041732-2
-# Lucas Leffel de Lima Uchoa RA: 23026525-2
-# Victor Yuki Matusita RA: 23010850-2
+## Integrantes:
+### Bruno Rezende de Lima RA: 24081546-2
+### Eduardo Henrique Ranucci Moreira RA: 23041732-2
+### Lucas Leffel de Lima Uchoa RA: 23026525-2
+### Victor Yuki Matusita RA: 23010850-2
 
 ### RRL
 
