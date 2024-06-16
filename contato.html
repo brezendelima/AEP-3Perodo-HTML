@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
+
 <body class="font-inter">
   <header class="bg-gradient-to-r from-customBlue via-customPink to-customGray">
     <nav class="flex items-center justify-between">
@@ -18,37 +20,41 @@
         <li class="transition-header"><a href="como-ajudar.html">Como Ajudar</a></li>
         <li class="transition-header"><a href="contato.html">Contato</a></li>
         <li class="transition-header"><a href="faq.html">FAQ</a></li>
-        <li><button class="bg-customButton border border-black hover:text-customButton hover:bg-black hover:border-customButton transition-colors duration-300 ease-in-out rounded-xl py-1.5 px-8 mr-20"><a href="login.html">Login</a></button></li>
+        <li><button
+            class="bg-customButton border border-black hover:text-customButton hover:bg-black hover:border-customButton transition-colors duration-300 ease-in-out rounded-xl py-1.5 px-8 mr-20"><a
+              href="login.html">Login</a></button></li>
       </ul>
     </nav>
-  </header> 
+  </header>
   <main class="m-20 flex justify-center gap-16">
     <div>
-        <div class="space-y-6">
-            <h2 class="font-bold text-6xl">Entre em contato</h2>
-            <p class="text-2xl text-customButton">Tem alguma dúvida ou sugestão? Nos avise!</p>
+      <div class="space-y-6">
+        <h2 class="font-bold text-6xl">Entre em contato</h2>
+        <p class="text-2xl text-customButton">Tem alguma dúvida ou sugestão? Nos avise!</p>
+      </div>
+      <form class="flex flex-col gap-6 mt-8">
+        <div class="flex gap-8">
+          <p class="flex flex-col gap-2">
+            <label class="font-medium" for="nome">Nome</label>
+            <input class="py-2.5 px-4 border-2 rounded-lg" type="text" id="nome" placeholder="Ex: João">
+          </p>
+          <p class="flex flex-col gap-2">
+            <label class="font-medium" for="sobrenome">Sobrenome</label>
+            <input class="py-2.5 px-4 border-2 rounded-lg" type="text" id="sobrenome" placeholder="Ex: da Silva">
+          </p>
         </div>
-        <form class="flex flex-col gap-6 mt-8">
-            <div class="flex gap-8">
-                <p class="flex flex-col gap-2">
-                    <label class="font-medium" for="nome">Nome</label>
-                    <input class="py-2.5 px-4 border-2 rounded-lg" type="text" id="nome" placeholder="Ex: João">
-                </p>
-                <p class="flex flex-col gap-2">
-                    <label class="font-medium" for="sobrenome">Sobrenome</label>
-                    <input class="py-2.5 px-4 border-2 rounded-lg" type="text" id="sobrenome" placeholder="Ex: da Silva">
-                </p>
-            </div> 
-            <p class="flex flex-col gap-2">
-                <label class="font-medium" for="email">Endereço de e-mail</label>
-                <input class="py-2.5 px-4 border-2 rounded-lg" type="email" id="email" placeholder="email@exemplo.com">
-            </p>   
-            <p class="flex flex-col gap-2">
-                <label class="font-medium" for="mensagem">Sua mensagem</label>
-                <textarea class="py-2.5 px-4 border-2 rounded-lg h-40" id="mensagem" placeholder="Digite sua mensagem aqui"></textarea>
-            </p>   
-            <button type="submit" class="py-4 px-4 bg-black text-white text-xl font-medium rounded-lg hover:text-black hover:bg-slate-200 transition-colors duration-150 ease-in-out">Enviar</button>
-        </form>
+        <p class="flex flex-col gap-2">
+          <label class="font-medium" for="email">Endereço de e-mail</label>
+          <input class="py-2.5 px-4 border-2 rounded-lg" type="email" id="email" placeholder="email@exemplo.com">
+        </p>
+        <p class="flex flex-col gap-2">
+          <label class="font-medium" for="mensagem">Sua mensagem</label>
+          <textarea class="py-2.5 px-4 border-2 rounded-lg h-40" id="mensagem"
+            placeholder="Digite sua mensagem aqui"></textarea>
+        </p>
+        <button type="submit"
+          class="py-4 px-4 bg-black text-white text-xl font-medium rounded-lg hover:text-black hover:bg-slate-200 transition-colors duration-150 ease-in-out">Enviar</button>
+      </form>
     </div>
     <img class="flex justify-center items-center" src="public/logo-grande.png" alt="rrl-logo">
   </main>
@@ -61,7 +67,7 @@
         <a href=""><img class="transition-footer-2" src="public/icon-youtube.png" alt="icon-youtube"></a>
         <a href=""><img class="transition-footer-2" src="public/icon-insta.png" alt="icon-insta"></a>
       </div>
-    </div>  
+    </div>
     <div class="flex gap-24 justify-center mt-8 mr-20">
       <ul class="flex flex-col justify-center gap-6 font-medium">
         <li class="text-black transition-footer"><a href="#">Como Ajudar</a></li>
@@ -78,4 +84,5 @@
     </div>
   </footer>
 </body>
+
 </html>
