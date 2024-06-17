@@ -11,4 +11,4 @@
 Projeto desenvolvido ao longo do primeiro semestre de 2024.
 
 Link do GitGub Pages: https://brezendelima.github.io/AEP-3Perodo-HTML/
-Link do Vídeo do Projeto: INSERIR LINK
+Link do Vídeo do Projeto: https://youtu.be/e6RAVcLXYQQ
